@@ -4,8 +4,6 @@
 :root {
   --primary-color: #fff;
   --secondary-color: #000;
-  --primary-color: #fff;
-  --secondary-color: #000;
   --main-color: rgba(190, 51, 255, 1);
 }
 
@@ -241,7 +239,8 @@ header::after {
 .home-img:hover {
   box-shadow:
     0 0 25px var(--main-color),
-    0 0 50px var(--main-color), 
+    0 0 50px var(--main-color),
+
     0 0 100px var(--main-color);
 }
 
@@ -286,17 +285,24 @@ header::after {
   0%,
   20% {
     content: "Frontend Developer";
-  } 21%,
+  }
+  
+  21%,
   40% {
     content: "Junior Developer";
   }
+
   41%,
   60% {
     content: "Frontend Developer";
-  } 61%,
+  }
+
+  61%,
   80% {
     content: "Junior Developer";
-  } 81%,
+  }
+
+  81%,
   100% {
     content: "Frontend Developer";
   }
@@ -314,7 +320,9 @@ header::after {
   90%,
   95% {
     width: 0;
-  } 5%,
+  }
+
+  5%,
   20%,
   25%,
   40%,
