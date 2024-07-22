@@ -28,6 +28,6 @@ menuIcon.addEventListener('click', () => {
 
 // socia media dotted part //////////////////////////////////////////////////////////
 const navigation = document.querySelector('.navigation');
-navigation.addEventListener('click',  function () {
+navigation.addEventListener('click', () => {
   navigation.classList.toggle('active');
 });
