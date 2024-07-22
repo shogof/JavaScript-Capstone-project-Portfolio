@@ -5,6 +5,7 @@
   --primary-color: #fff;
   --secondary-color: #000;
 }
+
 .light-mode {
   --primary-color: #000;
   --secondary-color: #fff;
@@ -53,7 +54,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5;
   border: 0 2px 0 0;
   border-color: var(--main-color);
   z-index: 100;
@@ -95,6 +95,13 @@ header::after {
   margin-right: 80px;
 }
 
+.navigation span ion-icon,
+.navigation span a {
+  color: #fff;
+  font-size: 0em;
+  transition: 0.1s;
+}
+
 .navbar a:hover {
   color: var(--main-color);
   border-bottom: 3px solid var(--main-color);
@@ -107,12 +114,6 @@ header::after {
 }
 
 /* dotted social media part ---------------------------------------------------------------------------------> */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .social-container {
   width: 28%;
@@ -156,6 +157,10 @@ header::after {
   margin-top: 0;
 }
 
+.text-animition span {
+  position: relative;
+}
+
 .navigation.active span {
   width: 45px;
   height: 45px;
@@ -173,11 +178,10 @@ header::after {
   font-size: 2rem;
 }
 
-.navigation span ion-icon,
-.navigation span a {
-  color: #fff;
-  font-size: 0em;
-  transition: 0.1s;
+.btn-group a:nth-of-type(2) {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  box-shadow: 0 0 25px transparent;
 }
 
 .navigation.active span ion-icon,
@@ -233,15 +237,15 @@ header::after {
   position: relative;
   top: 3rem;
   width: 32vw;
-  border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 
 .home-img:hover {
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
-    0 0 100px var(--main-color);
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color),
+              0 0 100px var(--main-color);
 }
 
 .home-content p {
@@ -258,10 +262,6 @@ header::after {
   min-width: 280px;
 }
 
-.text-animition span {
-  position: relative;
-}
-
 .text-animition span::before {
   content: "Web Developer";
   color: var(--main-color);
@@ -275,7 +275,6 @@ header::after {
   width: calc(100% + 8px);
   height: 100%;
   border-left: 3px solid var(--secondary-color);
-  position: absolute;
   right: -8px;
   animation: curser 0.6s infinite, typing 20s steps(14) infinite;
 }
@@ -373,12 +372,6 @@ header::after {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-}
-
-.btn-group a:nth-of-type(2) {
-  background-color: var(--secondary-color);
-  color: var(--main-color);
-  box-shadow: 0 0 25px transparent;
 }
 
 .btn-group a:nth-of-type(2):hover {
@@ -533,4 +526,3 @@ input:checked + .slider::before {
     margin: 45px 121px 18px 121px;
   }
 }
-
