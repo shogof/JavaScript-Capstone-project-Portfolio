@@ -22,6 +22,135 @@
   scroll-behavior: smooth;
 }
 
+
+/* pre loader */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(191, 51, 255, 0.8), rgba(255, 153, 255, 0.8));
+  background-size: 200% 200%;
+  animation: gradientBG 5s ease infinite;
+  overflow: hidden;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.wave-loader {
+  position: relative;
+  width: 80px;
+  height: 30px;
+}
+
+.wave-loader div {
+  position: absolute;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  background: rgb(191, 51, 255);
+  border-radius: 50%;
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+.wave-loader div:nth-child(1) {
+  left: 0;
+  animation-delay: -0.4s;
+}
+
+.wave-loader div:nth-child(2) {
+  left: 20px;
+  animation-delay: -0.3s;
+}
+
+.wave-loader div:nth-child(3) {
+  left: 40px;
+  animation-delay: -0.2s;
+}
+
+.wave-loader div:nth-child(4) {
+  left: 60px;
+  animation-delay: -0.1s;
+}
+
+.wave-loader div:nth-child(5) {
+  left: 80px;
+}
+
+.loading-text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-text-main {
+  font-size: 24px;
+  color: rgb(191, 51, 255);
+  font-weight: bold;
+  animation: textGlow 1.5s infinite alternate;
+}
+
+.loading-text-dots {
+  font-size: 24px;
+  color: rgb(191, 51, 255);
+}
+
+/* Wave loader animation */
+@keyframes wave {
+  0%, 100% {
+      transform: scaleY(1);
+  }
+  50% {
+      transform: scaleY(0.4);
+  }
+}
+
+/* Text glow animation */
+@keyframes textGlow {
+  0% {
+      text-shadow: 0 0 10px rgba(191, 51, 255, 0.5), 0 0 20px rgba(191, 51, 255, 0.4);
+  }
+  100% {
+      text-shadow: 0 0 20px rgba(191, 51, 255, 0.7), 0 0 30px rgba(191, 51, 255, 0.5);
+  }
+}
+
+/* Gradient background animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Hide content until preloader is done */
+header {
+  display: none;
+}
+
+
+/* pre loader */
+
 html {
   font-size: 60%;
   overflow-x: hidden;
@@ -40,7 +169,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 1445px;
+  width: 100%;
   height: 136px;
   box-sizing: border-box;
   padding: 61px 61px 30px 94px;
@@ -237,8 +366,7 @@ header::after {
 }
 
 .home-img:hover {
-  box-shadow:
-    0 0 25px var(--main-color),
+  box-shadow: 0 0 25px var(--main-color),
     0 0 50px var(--main-color),
 
     0 0 100px var(--main-color);
@@ -286,7 +414,7 @@ header::after {
   20% {
     content: "Frontend Developer";
   }
-  
+
   21%,
   40% {
     content: "Junior Developer";
@@ -527,3 +655,4 @@ input:checked + .slider::before {
     margin: 45px 121px 18px 121px;
   }
 }
+
