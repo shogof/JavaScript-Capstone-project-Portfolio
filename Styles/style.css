@@ -22,15 +22,9 @@
   scroll-behavior: smooth;
 }
 
-
 /* pre loader */
 
 /* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,6 +36,8 @@ body {
   background-size: 200% 200%;
   animation: gradientBG 5s ease infinite;
   overflow: hidden;
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .preloader {
@@ -119,21 +115,24 @@ body {
 
 /* Wave loader animation */
 @keyframes wave {
-  0%, 100% {
-      transform: scaleY(1);
+  0%,
+  100% {
+    transform: scaleY(1);
   }
+
   50% {
-      transform: scaleY(0.4);
+    transform: scaleY(0.4);
   }
 }
 
 /* Text glow animation */
 @keyframes textGlow {
   0% {
-      text-shadow: 0 0 10px rgba(191, 51, 255, 0.5), 0 0 20px rgba(191, 51, 255, 0.4);
+    text-shadow: 0 0 10px rgba(191, 51, 255, 0.5), 0 0 20px rgba(191, 51, 255, 0.4);
   }
+
   100% {
-      text-shadow: 0 0 20px rgba(191, 51, 255, 0.7), 0 0 30px rgba(191, 51, 255, 0.5);
+    text-shadow: 0 0 20px rgba(191, 51, 255, 0.7), 0 0 30px rgba(191, 51, 255, 0.5);
   }
 }
 
@@ -148,19 +147,11 @@ header {
   display: none;
 }
 
-
 /* pre loader */
 
 html {
   font-size: 60%;
   overflow-x: hidden;
-}
-
-body {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 0;
-  margin: 0;
 }
 
 /* header section ---------------------------------------------------------------------------------> */
@@ -368,7 +359,6 @@ header::after {
 .home-img:hover {
   box-shadow: 0 0 25px var(--main-color),
     0 0 50px var(--main-color),
-
     0 0 100px var(--main-color);
 }
 
@@ -655,4 +645,3 @@ input:checked + .slider::before {
     margin: 45px 121px 18px 121px;
   }
 }
-
