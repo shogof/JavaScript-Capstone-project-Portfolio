@@ -1,6 +1,5 @@
 .about h2 {
-  text-align: center;
-  font-family: Sen;
+  font-family: "Sen", serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28.88px;
@@ -8,7 +7,7 @@
 }
 
 .about span {
-  font-family: Sen;
+  font-family: "Sen", serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28.88px;
@@ -41,7 +40,7 @@
 
 .slider-container > div > div {
   overflow: hidden;
-  box-shadow: 0px 0px 61px 0px rgba(251, 244, 244, 0.62);
+  box-shadow: 0 0 61px 0 rgba(251, 244, 244, 0.62);
   border-radius: 30px;
 }
 
@@ -66,7 +65,7 @@
   transform: translateX(-50%) translateY(-50%);
   width: 274.94px;
   height: 270px;
-  gap: 0px;
+  gap: 0;
   border-radius: 25px;
   border: 5px solid rgb(190, 51, 255);
   margin: -166px 168px;
@@ -154,7 +153,7 @@ ul li.colored {
 /* Slider-conatainer ended */
 
 .about-me #about-info {
-  font-family: Inter;
+  font-family: "Inter", serif;
   font-size: 11px;
   font-weight: 400;
   line-height: 13.31px;
@@ -163,6 +162,7 @@ ul li.colored {
   width: 257px;
   height: 83px;
 }
+
 /* skills part started */
 
 .skills-main {
@@ -182,7 +182,7 @@ ul li.colored {
 .skills-main h3,
 .rigth-skills h3 {
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 18.15px;
@@ -203,7 +203,7 @@ ul li.colored {
 }
 
 .info p {
-  font-family: Inter;
+  font-family: "Inter", serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 12.1px;
@@ -227,7 +227,6 @@ ul li.colored {
   width: 256.83px;
   height: 7.96px;
   border-radius: 5px;
-  opacity: 0px;
 }
 
 .skills-bar .bar .html {
@@ -254,6 +253,7 @@ ul li.colored {
   0% {
     width: 0%;
   }
+
   100% {
     width: 95%;
   }
@@ -263,6 +263,7 @@ ul li.colored {
   0% {
     width: 0%;
   }
+
   100% {
     width: 87%;
   }
@@ -272,6 +273,7 @@ ul li.colored {
   0% {
     width: 0%;
   }
+
   100% {
     width: 75%;
   }
@@ -281,10 +283,12 @@ ul li.colored {
   0% {
     width: 0%;
   }
+
   100% {
     width: 75%;
   }
 }
+
 /* professional skills started */
 
 .rigth-skills h3 {
@@ -309,7 +313,8 @@ ul li.colored {
   height: 80px;
   border-radius: 50%;
   padding: 10px;
-  box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.15),
+  box-shadow:
+    6px 6px 10px -1px rgba(255, 255, 255, 0.15),
     -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
 }
 
@@ -320,9 +325,11 @@ ul li.colored {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
+  box-shadow: 
+    inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
     inset -4px -4px 6px -1px rgba(0, 0, 0, 0.7),
-    -0.5px -0.5px 0 rgba(0, 0, 0, 1), 0.5px 0.5px 0 rgba(255, 255, 255, 0.15),
+    -0.5px -0.5px 0 rgba(0, 0, 0, 1),
+    0.5px 0.5px 0 rgba(255, 255, 255, 0.15),
     0 12px 10px -10px rgba(255, 255, 255, 0.05);
 }
 
@@ -341,12 +348,15 @@ circle {
 #c1 {
   animation: anim1 2s linear forwards;
 }
+
 #c2 {
   animation: anim2 2s linear forwards;
 }
+
 #c3 {
   animation: anim3 2s linear forwards;
 }
+
 #c4 {
   animation: anim4 2s linear forwards;
 }
@@ -358,7 +368,7 @@ svg {
 }
 
 .skill p {
-  font-family: Inter;
+  font-family: "Inter", serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 18.15px;
@@ -366,21 +376,25 @@ svg {
 }
 
 @keyframes anim1 {
+
   100% {
     stroke-dashoffset: 50;
   }
 }
 @keyframes anim2 {
+
   100% {
     stroke-dashoffset: 40;
   }
 }
 @keyframes anim3 {
+
   100% {
     stroke-dashoffset: 70;
   }
 }
 @keyframes anim4 {
+
   100% {
     stroke-dashoffset: 30;
   }
@@ -391,11 +405,11 @@ svg {
   width: 100%;
 }
 
-#about-btn  {
+#about-btn {
   background-color: rgb(190, 51, 255);
   width: 108px;
   height: 30px;
-  font-family: Inter;
+  font-family: "Inter", serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 14.52px;
@@ -414,7 +428,8 @@ svg {
   background-color: #fff;
   color: rgb(190, 51, 255);
   font-weight: 900;
-  box-shadow: inset 5px 5px 20px rgb(190, 51, 255),
+  box-shadow:
+    inset 5px 5px 20px rgb(190, 51, 255),
     inset -5px -5px 20px rgb(190, 51, 255);
 }
 
@@ -442,6 +457,10 @@ svg {
 
   .skills-main {
     flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    margin: 20px 0 0 0;
   }
 
   .slider-container > div,
@@ -478,19 +497,12 @@ svg {
     height: 22px;
   }
 
-  .content:before {
+  .content::before {
     margin-top: 303px;
   }
 
   .linkm {
     font-size: 25px;
-  }
-
-  .skills-main {
-    justify-content: space-between;
-    height: 100px;
-    width: 100%;
-    margin: 20px 0 0 0;
   }
 
   .skills-bar {
@@ -514,7 +526,7 @@ svg {
   }
 
   .info p {
-    font-family: Inter;
+    font-family: "Inter", serif;
     font-size: 10px;
     font-weight: 400;
     line-height: 12.1px;
@@ -554,7 +566,8 @@ svg {
     border-radius: 50%;
     margin-left: 10px;
     padding: 5px;
-    box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.15),
+    box-shadow: 
+      6px 6px 10px -1px rgba(255, 255, 255, 0.15),
       -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
   }
 
@@ -562,9 +575,11 @@ svg {
     width: 60px;
     height: 60px;
     margin-top: 5px;
-    box-shadow: inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
+    box-shadow: 
+      inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
       inset -4px -4px 6px -1px rgba(0, 0, 0, 0.7),
-      -0.5px -0.5px 0 rgba(0, 0, 0, 1), 0.5px 0.5px 0 rgba(255, 255, 255, 0.15),
+      -0.5px -0.5px 0 rgba(0, 0, 0, 1),
+      0.5px 0.5px 0 rgba(255, 255, 255, 0.15),
       0 12px 10px -10px rgba(255, 255, 255, 0.05);
   }
 
@@ -656,7 +671,7 @@ svg {
     height: 30px;
   }
 
-  .content:before {
+  .content::before {
     margin-top: 503px;
   }
 
