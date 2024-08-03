@@ -325,7 +325,7 @@ ul li.colored {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 
+  box-shadow:
     inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
     inset -4px -4px 6px -1px rgba(0, 0, 0, 0.7),
     -0.5px -0.5px 0 rgba(0, 0, 0, 1),
@@ -376,25 +376,24 @@ svg {
 }
 
 @keyframes anim1 {
-
   100% {
     stroke-dashoffset: 50;
   }
 }
-@keyframes anim2 {
 
+@keyframes anim2 {
   100% {
     stroke-dashoffset: 40;
   }
 }
-@keyframes anim3 {
 
+@keyframes anim3 {
   100% {
     stroke-dashoffset: 70;
   }
 }
-@keyframes anim4 {
 
+@keyframes anim4 {
   100% {
     stroke-dashoffset: 30;
   }
@@ -566,7 +565,7 @@ svg {
     border-radius: 50%;
     margin-left: 10px;
     padding: 5px;
-    box-shadow: 
+    box-shadow:
       6px 6px 10px -1px rgba(255, 255, 255, 0.15),
       -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
   }
@@ -575,7 +574,7 @@ svg {
     width: 60px;
     height: 60px;
     margin-top: 5px;
-    box-shadow: 
+    box-shadow:
       inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
       inset -4px -4px 6px -1px rgba(0, 0, 0, 0.7),
       -0.5px -0.5px 0 rgba(0, 0, 0, 1),
