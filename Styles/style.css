@@ -811,16 +811,16 @@ input:checked + .sliders::before {
     gap: 1.5rem;
   }
 
-  .navigation.active span #zarb,
-  .navigation.active span a {
-    color: rgb(190, 51, 255);
-    font-size: 1.5em;
-  }
-
   .btn-group a:nth-of-type(2) {
     background-color: var(--secondary-color);
     color: var(--main-color);
     box-shadow: 0 0 25px transparent;
+  }
+
+  .navigation.active span #zarb,
+  .navigation.active span a {
+    color: rgb(190, 51, 255);
+    font-size: 1.5em;
   }
 
   .btn-group a:nth-of-type(2):hover {

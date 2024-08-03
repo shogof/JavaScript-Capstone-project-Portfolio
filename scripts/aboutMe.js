@@ -96,7 +96,7 @@ const options = document.querySelectorAll('.option');
 
 let index = 1;
 let opIndex = 0;
-let size = slides[index].clientWidth;
+const size = slides[index].clientWidth;
 
 function update() {
   slider.style.transform = 'translateX(' + -size * index + 'px)';
@@ -146,7 +146,7 @@ slider.addEventListener('transitionend', () => {
     slider.style.transform = 'translateX(' + -size * index + 'px)';
   } else if (slides[index].id === 'last') {
     slider.style.transition = 'none';
-    index = 1;  
+    index = 1;
     slider.style.transform = 'translateX(' + -size * index + 'px)';
   }
 });

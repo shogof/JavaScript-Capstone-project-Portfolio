@@ -305,6 +305,99 @@
         </div>
       </section>
     </section>
+    <!-- contact part -->
+    <section class="contact">
+      <div class="contact-container">
+        <h2>Contact <span>Me</span></h2>
+        <div class="line"></div>
+        <form id="contact-form">
+          <div class="form-group">
+            <div class="input-wrapper">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Type your name"
+                required
+              />
+              <div
+                id="name-feedback"
+                class="feedback hidden"
+                aria-live="assertive"
+              ></div>
+            </div>
+            <div class="input-wrapper">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Type your last name"
+                required
+              />
+              <div
+                id="last-name-feedback"
+                class="feedback hidden"
+                aria-live="assertive"
+              ></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Type your email"
+                required
+              />
+              <div
+                id="email-feedback"
+                class="feedback hidden"
+                aria-live="assertive"
+              ></div>
+            </div>
+            <div class="input-wrapper">
+              <label for="phone-number">Phone Number</label>
+              <input
+                type="tel"
+                id="phone-number"
+                placeholder="Type your phone number"
+                required
+              />
+              <div
+                id="phone-number-feedback"
+                class="feedback hidden"
+                aria-live="assertive"
+              ></div>
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message"
+              required
+            ></textarea>
+            <div
+              id="message-feedback"
+              class="feedback hidden"
+              aria-live="assertive"
+            ></div>
+          </div>
+
+          <button id="submit-btn" type="submit">Submit</button>
+          <div
+            id="form-error-message"
+            class="error-message"
+            aria-live="assertive"
+          ></div>
+        </form>
+      </div>
+    </section>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
