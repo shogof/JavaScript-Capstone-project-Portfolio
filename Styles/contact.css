@@ -15,11 +15,10 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid #be33ff;
-  box-shadow: 0px 4px 50px 0px #be33ff;
+  box-shadow: 0 4px 50px 0 #be33ff;
   max-width: 100%;
   margin: 10px;
   background-color: #2e2222;
-  padding: 20px;
   opacity: 1;
   padding: 22px 19px 44px 19px;
 }
@@ -37,7 +36,6 @@
 
 .contact-container span {
   font-family: Sen, sans-serif;
-  text-align: center;
   color: rgb(190, 51, 255);
   font-size: 20px;
   font-weight: 800;
@@ -154,7 +152,7 @@
     border-radius: 15px;
     padding: 11px 50px;
     box-sizing: content-box;
-    font-family: Inter;
+    font-family: "Inter", serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24.2px;

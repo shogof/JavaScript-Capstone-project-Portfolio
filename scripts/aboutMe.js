@@ -68,7 +68,7 @@ const sliderData = [
 ];
 
 function createSlider() {
-  sliderData.forEach((item, index) => {
+  sliderData.forEach((item) => {
     const imgDiv = document.createElement("div");
     imgDiv.classList.add("img");
 

@@ -79,8 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document
         .getElementById('last-name-feedback')
         .classList.remove('success', 'hidden');
-      document.getElementById('last-name-feedback').textContent =
-        'Last name must be at least 4 characters.';
+      document.getElementById('last-name-feedback').textContent = 'Last name must be at least 4 characters.';
       document.getElementById('last-name-feedback').classList.add('error');
     } else {
       lastNameInput.classList.remove('valid', 'invalid');
