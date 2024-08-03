@@ -8,35 +8,45 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
     <link rel="stylesheet" href="Styles/style.css" />
     <link rel="stylesheet" href="Styles/aboutMe.css">
+    <link rel="stylesheet" href="Styles/contact.css">
   </head>
   <body>
-    <div class="preloader">
+    <!-- <div class="preloader">
       <div class="wave-loader"></div>
       <div class="loading-text">
           <span class="loading-text-main">Loading</span>
           <span class="loading-text-dots">...</span>
       </div>
-  </div>
-    <header class="header">
-      <a href="#home" class="logo">Shogo</a>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="theme-switch-wrapper">
-        <label class="theme-switch">
-          <input type="checkbox" />
-          <div class="slider round"></div>
-        </label>
-      </div>
-      <div id="ham-btn">
-        <i class="bx bx-menu" id="menu-icon"></i>
-      </div>
-    </header>
+    </div> -->
+    <div class="header">
+        <a href="#home" class="logo">Shogo</a>
+        <div id="div-ezafi"></div>
+        <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#project">Project</a>
+          <a href="#contact">Contact</a>
+          <label class="theme-switch">
+            <input type="checkbox" />
+            <div class="sliders round"></div>
+          </label>
+        </nav>
+        <div id="ham-btn">
+          <i class="bx bx-menu" id="menu-icon"></i>
+        </div>
+        <div class="theme-switch-wrapper" id="lab">
+          <label class="theme-switch">
+            <input type="checkbox" />
+            <div class="sliders round"></div>
+          </label>
+        </div>
+    </div>
     <section class="home" id="home">
       <div class="home-content">
         <h4>Hello It's Me</h4>
@@ -82,12 +92,13 @@
       <img src="images/image.jpg" alt="" class="home-img" />
     </section>
     <!-- about section -->
-      
+    
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script src="scripts/script.js"></script>
     <script src="scripts/aboutMe.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/contact.js"></script>
   </body>
 </html>
