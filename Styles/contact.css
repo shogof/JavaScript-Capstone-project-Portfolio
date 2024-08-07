@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #2e2222;
+  /* background-color: #2e2222; */
 }
 
 .contact-container {
@@ -18,14 +18,14 @@
   box-shadow: 0 4px 50px 0 #be33ff;
   max-width: 100%;
   margin: 10px;
-  background-color: #2e2222;
+  background-color: var(--secondary-color);
   opacity: 1;
   padding: 22px 19px 44px 19px;
 }
 
 .contact-container h2 {
   margin-top: 0;
-  color: #fff;
+  color: var(--primary-color);
   font-family: Sen, sans-serif;
   font-size: 20px;
   font-weight: 800;
@@ -51,7 +51,7 @@
 }
 
 .contact-container label {
-  color: #fff;
+  color: var(--primary-color);
   margin-left: 5px;
   display: inline-block;
 }
@@ -61,8 +61,8 @@
   width: 302px;
   width: 100%;
   padding: 10px;
-  color: #fff;
-  background-color: #3e2b2b;
+  color: var(--primary-color);
+  background-color: var(--input-color);
   border: 1px solid #be33ff;
   border-radius: 5px;
   margin-bottom: 6px;
@@ -80,7 +80,7 @@
 
 .contact-container button {
   background-color: #be33ff;
-  color: #fff;
+  color: var(--primary-color);
   border: none;
   border-radius: 15px;
   cursor: pointer;

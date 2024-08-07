@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
-
 :root {
   --primary-color: #fff;
   --secondary-color: #000;
   --main-color: rgba(190, 51, 255, 1);
+  --input-color: #3e2b2b;
 }
 
 .light-mode {
-  --primary-color: #000;
   --secondary-color: #fff;
-}.sliderr
+  --primary-color: #000;
+  --input-color: #d2c4c4;
+}
 
 * {
   margin: 0;
@@ -28,8 +29,8 @@
 
 body {
   animation: gradientBG 5s ease infinite;
-  background-color: #000;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .preloader {
@@ -120,14 +121,12 @@ body {
 /* Text glow animation */
 @keyframes textGlow {
   0% {
-    text-shadow:
-      0 0 10px rgba(191, 51, 255, 0.5),
+    text-shadow: 0 0 10px rgba(191, 51, 255, 0.5),
       0 0 20px rgba(191, 51, 255, 0.4);
   }
 
   100% {
-    text-shadow:
-      0 0 20px rgba(191, 51, 255, 0.7),
+    text-shadow: 0 0 20px rgba(191, 51, 255, 0.7),
       0 0 30px rgba(191, 51, 255, 0.5);
   }
 }
@@ -172,10 +171,10 @@ header {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: 10px;
   width: 100%;
   height: 4px;
-  box-shadow: 0 4px 6px var(--main-color);
+  box-shadow: 0 4px 6px rgb(190, 51, 255);
   z-index: -1;
 }
 
@@ -206,7 +205,7 @@ header {
 
 .navigation span #zarb,
 .navigation span a {
-  color: #fff;
+  color: var(--primary-color);
   font-size: 0;
   transition: 0.1s;
 }
@@ -260,7 +259,7 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: #fff;
+  background: var(--primary-color);
   transform: translate(calc(20px * var(--x)), calc(20px * var(--y)));
   transition: 0.5s;
   transition-delay: calc(0.1s * var(--i));
@@ -274,7 +273,7 @@ header {
 .navigation.active span {
   width: 25px;
   height: 25px;
-  background: #fff;
+  background: var(--primary-color);
   font-size: 1.7rem;
   transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
   transition: 0.8s ease-in-out;
@@ -415,9 +414,7 @@ header {
 }
 
 .home-img:hover {
-  box-shadow:
-    0 0 25px var(--main-color),
-    0 0 50px var(--main-color),
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
     0 0 100px var(--main-color);
 }
 
@@ -559,7 +556,7 @@ header {
   display: none;
 }
 
-.sliderr {
+.sliders-round {
   background: #ccc;
   bottom: 0;
   cursor: pointer;
@@ -570,7 +567,7 @@ header {
   transition: 0.4s;
 }
 
-.sliderr::before {
+.sliders-round::before {
   background: #010101;
   bottom: 3.52px;
   content: "";
@@ -581,19 +578,19 @@ header {
   width: 19.52px;
 }
 
-input:checked + .sliderr {
+input:checked + .sliders-round {
   background: rgb(150, 65, 255);
 }
 
-input:checked + .sliderr::before {
+input:checked + .sliders-round::before {
   transform: translateX(-28px);
 }
 
-.sliderr.round {
+.sliders-round {
   border-radius: 34px;
 }
 
-.sliderr.round::before {
+.sliders-round::before {
   border-radius: 50%;
 }
 
@@ -631,7 +628,7 @@ input:checked + .sliderr::before {
 
   #menu-icon {
     display: block;
-    color: white;
+    color: var(--primary-color);
     font-size: 40.65px;
   }
 
@@ -670,7 +667,7 @@ input:checked + .sliderr::before {
     display: block;
     font-size: 2rem;
     margin: 3rem auto;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--primary-color);
     padding-bottom: 10px;
   }
 
@@ -727,9 +724,7 @@ input:checked + .sliderr::before {
   }
 
   .home-img:hover {
-    box-shadow:
-      0 0 25px var(--main-color),
-      0 0 50px var(--main-color),
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
       0 0 100px var(--main-color);
   }
 
@@ -922,7 +917,7 @@ input:checked + .sliderr::before {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: #fff;
+    background: var(--primary-color);
     transform: translate(calc(20px * var(--x)), calc(20px * var(--y)));
     transition: 0.5s;
     transition-delay: calc(0.1s * var(--i));
@@ -936,7 +931,7 @@ input:checked + .sliderr::before {
   .navigation.active span {
     width: 45px;
     height: 45px;
-    background: #fff;
+    background: var(--primary-color);
     font-size: 1.7rem;
     transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
     transition: 0.8s ease-in-out;
@@ -944,7 +939,7 @@ input:checked + .sliderr::before {
   }
 
   .navigation.active span:hover {
-    background: rgb(16, 16, 16);
+    background: var(--secondary-color);
     color: var(--primary-color);
     box-shadow: 0 0 25px var(--main-color);
     font-size: 2rem;
