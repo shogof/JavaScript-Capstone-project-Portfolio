@@ -119,16 +119,16 @@ To contribute to this project, please follow these steps:
 
 This project was designed with the help of talented designers who provided the Figma design. I would like to give special thanks to them for their amazing work:
 
-- **[Sara Ebadi]**  
+- **Sara Ebadi**  
   LinkedIn: [Sara Ebadi](https://www.linkedin.com/in/designername1)
 
-- **[Hasina Nasiry]**  
+- **Hasina Nasiry**  
   LinkedIn: [Hasina Nasiry](https://www.linkedin.com/in/designername2)
 
-- **[Sohaila Sarwari]**  
+- **Sohaila Sarwari**  
   LinkedIn: [Sohaila Sarwari](https://www.linkedin.com/in/sohaila-sarwari-660555218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
-- **[Mahboba Qarizada]**  
+- **Mahboba Qarizada**  
   LinkedIn: [Mahboba Qarizada LinkedIn](https://www.linkedin.com/in/designername4)
 
 Thank you for your exceptional design work and creativity!
