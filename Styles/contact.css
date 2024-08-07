@@ -223,3 +223,9 @@ textarea.invalid {
 .hidden {
   display: none;
 }
+
+.contact-social-media {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

@@ -424,7 +424,6 @@ svg {
 }
 
 #about-btn:hover {
-  background-color: var(--primary-color);
   color: rgb(190, 51, 255);
   font-weight: 900;
   box-shadow:
