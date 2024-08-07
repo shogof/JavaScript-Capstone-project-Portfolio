@@ -8,11 +8,12 @@ The **JavaScript-Capstone-Portfolio** is the final project for my JavaScript cou
 
 ## Live Demo 🌐
 
-View the live demo of the project [here](https://shogof.github.io/Build-a-Pok-mon-Search-App/).
+View the live demo of the project [here](https://shogof.github.io/JavaScript-Capstone-project-Portfolio/).
 
 ## Demo 📸
 
-![Project GIF](assets/s.png)
+![Project Image](img/picture1.jpg)
+![Project Image](img/picture2.jpg)
 
 ## Technologies Used 🛠️
 
@@ -41,11 +42,13 @@ This project is built using the following technologies:
 To get started with this project, follow these steps:
 
 1. **Clone the repository:**
+
    ```bash
    git clone git@github.com:shogof/js-Capstone-Project-Portfolio.git
    ```
 
 2. **Navigate to the project directory:**
+
    ```bash
    cd js-Capstone-Project-Portfolio
    ```
@@ -107,15 +110,32 @@ To contribute to this project, please follow these steps:
 7. **Submit a pull request:**
    Open a pull request from your branch to the main repository to propose your changes.
 
-   - Go to the [original repository](https://github.com/Shegofa/js-Capstone-Project-Portfolio).
+   - Go to the [original repository](https://github.com/shogof/JavaScript-Capstone-project-Portfolio).
    - Click on the "Pull Requests" tab.
    - Click on "New Pull Request" and select your branch.
    - Provide a clear description of the changes you made and submit the pull request.
 
+## Acknowledgments 🙏
+
+This project was designed with the help of talented designers who provided the Figma design. I would like to give special thanks to them for their amazing work:
+
+- **[Sara Ebadi]**  
+  LinkedIn: [Sara Ebadi](https://www.linkedin.com/in/designername1)
+
+- **[Hasina Nasiry]**  
+  LinkedIn: [Hasina Nasiry](https://www.linkedin.com/in/designername2)
+
+- **[Sohaila Sarwari]**  
+  LinkedIn: [Sohaila Sarwari](https://www.linkedin.com/in/sohaila-sarwari-660555218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+
+- **[Mahboba Qarizada]**  
+  LinkedIn: [Mahboba Qarizada LinkedIn](https://www.linkedin.com/in/designername4)
+
+Thank you for your exceptional design work and creativity!
+
 ## License 📜
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE) file for more details.
-
 
 ## Contact Me 📬
 
