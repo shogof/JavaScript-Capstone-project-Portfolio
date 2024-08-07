@@ -239,7 +239,6 @@ projects.forEach((projElement, index) => {
 const vic = document.getElementById('vic');
 vic.addEventListener('click', toggleImages);
 
-
 // Array of image data
 const images = [
   'image/pokemon/home page pokemon.jpg',
