@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+
 :root {
   --primary-color: #fff;
   --secondary-color: #000;
@@ -121,12 +122,14 @@ body {
 /* Text glow animation */
 @keyframes textGlow {
   0% {
-    text-shadow: 0 0 10px rgba(191, 51, 255, 0.5),
+    text-shadow:
+      0 0 10px rgba(191, 51, 255, 0.5),
       0 0 20px rgba(191, 51, 255, 0.4);
   }
 
   100% {
-    text-shadow: 0 0 20px rgba(191, 51, 255, 0.7),
+    text-shadow:
+      0 0 20px rgba(191, 51, 255, 0.7),
       0 0 30px rgba(191, 51, 255, 0.5);
   }
 }
@@ -414,7 +417,9 @@ header {
 }
 
 .home-img:hover {
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+  box-shadow:
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color),
     0 0 100px var(--main-color);
 }
 
@@ -565,6 +570,7 @@ header {
   right: 0;
   top: 0;
   transition: 0.4s;
+  border-radius: 34px;
 }
 
 .sliders-round::before {
@@ -576,6 +582,7 @@ header {
   position: absolute;
   transition: 0.4s;
   width: 19.52px;
+  border-radius: 50%;
 }
 
 input:checked + .sliders-round {
@@ -584,14 +591,6 @@ input:checked + .sliders-round {
 
 input:checked + .sliders-round::before {
   transform: translateX(-28px);
-}
-
-.sliders-round {
-  border-radius: 34px;
-}
-
-.sliders-round::before {
-  border-radius: 50%;
 }
 
 /* Media queries  ---------------------------------------------------------------------------------> */
@@ -723,7 +722,9 @@ input:checked + .sliders-round::before {
   }
 
   .home-img:hover {
-    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+    box-shadow:
+      0 0 25px var(--main-color),
+      0 0 50px var(--main-color),
       0 0 100px var(--main-color);
   }
 

@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background-color: #2e2222; */
 }
 
 .contact-container {
@@ -94,30 +93,30 @@
   background-color: #9d28cc;
 }
 
-/* Layout adjustments for larger screens */
+/* media for larger screens */
 @media (min-width: 769px) {
   .contact-container {
     padding: 30px;
-    max-width: 900px; /* Set max-width for larger screens */
+    max-width: 900px;
     margin: 50px auto;
     width: 900px;
     height: auto;
   }
 
   .contact-container h2 {
-    font-size: 48px; /* Adjusted font size for larger screens */
-    line-height: 58px; /* Adjusted line height for larger screens */
+    font-size: 48px;
+    line-height: 58px;
   }
 
   .contact-container span {
-    font-size: 48px; /* Adjusted font size for larger screens */
-    line-height: 58px; /* Adjusted line height for larger screens */
+    font-size: 48px;
+    line-height: 58px;
   }
 
   .form-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Add gap between elements */
+    gap: 10px;
     width: 710px;
   }
 
@@ -133,7 +132,7 @@
 
   .form-group .input-wrapper {
     flex: 1;
-    min-width: calc(50% - 10px); /* Two fields side by side */
+    min-width: calc(50% - 10px);
   }
 
   .input-wrapper textarea {
@@ -164,35 +163,35 @@
 /* Media Queries for Extra Large Screens */
 @media (min-width: 1200px) {
   .contact-container {
-    max-width: 1200px; /* Maximum width for very large screens */
+    max-width: 1200px;
   }
 
   .contact-container h2 {
-    font-size: 64px; /* Font size for very large screens */
-    line-height: 77px; /* Line height for very large screens */
+    font-size: 64px;
+    line-height: 77px;
   }
 
   .contact-container span {
-    font-size: 64px; /* Font size for very large screens */
-    line-height: 77px; /* Line height for very large screens */
+    font-size: 64px;
+    line-height: 77px;
   }
 }
 
 /* Feedback styles */
 .feedback {
   font-size: 14px;
-  margin-top: 5px; /* Added margin-top to position the feedback messages */
+  margin-top: 5px;
 }
 
 /* Success and error styles */
 input.valid,
 textarea.valid {
-  border-color: #4caf50; /* Green border for valid */
+  border-color: #4caf50;
 }
 
 input.invalid,
 textarea.invalid {
-  border-color: #ff4c4c; /* Red border for invalid */
+  border-color: #ff4c4c;
 }
 
 /* Feedback messages */

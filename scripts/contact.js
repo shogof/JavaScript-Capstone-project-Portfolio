@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Get references to the form elements
   const nameInput = document.getElementById('name');
   const lastNameInput = document.getElementById('last-name');
   const emailInput = document.getElementById('email');
@@ -23,14 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const formData = {
       name: nameInput.value,
       lastName: lastNameInput.value,
-      email: emailInput.value.toLowerCase(), // Convert to lowercase before saving
+      email: emailInput.value.toLowerCase(),
       phoneNumber: phoneNumberInput.value,
       message: messageTextarea.value,
     };
     localStorage.setItem('contactFormData', JSON.stringify(formData));
   }
 
-  // Real-time validation functions with error messages
   function validateName() {
     const name = nameInput.value.trim();
     if (name.length > 0 && name.length <= 30) {

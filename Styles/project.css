@@ -17,8 +17,7 @@
   cursor: pointer;
   color: var(--primary-color);
   font-size: 1.5rem;
-  /* font-weight: 200; */
-  transition: transform 0.9s ease, color 0.3s ease; /* Added transition */
+  transition: transform 0.9s ease, color 0.3s ease;
 }
 
 .fa-times:hover {
@@ -38,6 +37,22 @@
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.project img {
+  margin-bottom: 0;
+}
+
+.go-live img {
+  height: 12px;
+  width: 15px;
+  margin-top: 2px;
+}
+
+.go-demo img {
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
 }
 
 .image-div .img img {
@@ -100,7 +115,7 @@ input[type="radio"] {
 
 /* //// */
 .project h2 {
-  font-family: Sen;
+  font-family: "Sen", sans-serif;
   font-size: 32px;
   font-weight: 800;
   line-height: 38.5px;
@@ -116,10 +131,6 @@ input[type="radio"] {
   margin: -5px auto;
 }
 
-.project img {
-  margin-bottom: 0;
-}
-
 .g {
   width: 100%;
   height: 100%;
@@ -131,7 +142,7 @@ input[type="radio"] {
   border-radius: 50%;
   background-color: black;
   border: 1px solid rgb(190, 51, 255);
-  font-family: Sen;
+  font-family: "Sen", sans-serif;
   font-size: 7px;
   font-weight: 400;
   line-height: 8.42px;
@@ -192,10 +203,10 @@ input[type="radio"] {
   height: auto;
   border-top: 1px solid var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
-  max-width: 90%; /* Ensures it doesn't exceed viewport width */
+  max-width: 90%;
   padding: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000;
 }
 
 .image-div {
@@ -212,7 +223,7 @@ input[type="radio"] {
 
 #html-btn,
 .cj {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 8px;
   font-weight: 700;
   line-height: 9.68px;
@@ -259,10 +270,10 @@ input[type="radio"] {
   box-shadow: 10px 10px 20px rgba(190, 51, 255, 0.3),
     -10px -10px 20px rgba(190, 51, 255, 0.3),
     5px 5px 20px rgba(190, 51, 255, 0.3), -5px -5px 20px rgba(190, 51, 255, 0.3);
-  z-index: 1; /* Lower than image-div */
-  position: relative; /* Ensure proper stacking context */
-  margin-top: -80px; /* Adjust as needed */
-  margin-left: 130px; /* Adjust as needed */
+  z-index: 1;
+  position: relative;
+  margin-top: -80px;
+  margin-left: 130px;
   padding: 15px;
   box-sizing: border-box;
   color: var(--primary-color);
@@ -272,7 +283,7 @@ input[type="radio"] {
   color: var(--primary-color);
   display: flex;
   text-align: justify;
-  font-family: Sen;
+  font-family: "Sen", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 14.44px;
@@ -286,27 +297,21 @@ input[type="radio"] {
   border-radius: 15px;
   background-color: rgb(190, 51, 255);
   color: var(--primary-color);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 14.52px;
   text-align: center;
   border: none;
   padding: 5px 10px 10px 10px;
-  position: relative; /* Ensure proper stacking context */
+  position: relative;
   transition: 1s ease;
 }
 
 .go-live {
-  z-index: 3; /* Higher than image-div and detail-div */
-  margin-left: 155px; /* Adjust as needed */
+  z-index: 3;
+  margin-left: 155px;
   padding-top: 2px;
-}
-
-.go-live img {
-  height: 12px;
-  width: 15px;
-  margin-top: 2px;
 }
 
 .go-demo {
@@ -316,12 +321,6 @@ input[type="radio"] {
   top: 185px;
   width: 100px;
   padding: 0;
-}
-
-.go-demo img {
-  width: 12px;
-  height: 12px;
-  margin-top: 2px;
 }
 
 .go-demo:hover,
@@ -383,6 +382,17 @@ input[type="radio"] {
     transform: rotateY(calc(var(--i) * 60deg)) translateZ(350px);
   }
 
+  .go-live img {
+    height: 16px;
+    width: 20px;
+    margin-top: 5px;
+  }
+
+  .go-demo img {
+    width: 14px;
+    height: 14px;
+  }
+
   .slider span img {
     position: absolute;
     top: 0;
@@ -390,7 +400,6 @@ input[type="radio"] {
     width: 100%;
     height: 100%;
     border-radius: 6px;
-    /* object-fit: cover; */
     transition: 2s;
   }
 
@@ -398,6 +407,7 @@ input[type="radio"] {
   .slider span:hover button {
     transform: translateY(-50px) scale(1);
   }
+
   .fa-times {
     top: -2.5rem;
     left: 47rem;
@@ -425,7 +435,7 @@ input[type="radio"] {
     margin-top: 0;
     padding-top: 20px;
     width: 800px;
-    max-width: 90%; /* Ensures it doesn't exceed viewport width */
+    max-width: 90%;
   }
 
   .image-div {
@@ -440,8 +450,8 @@ input[type="radio"] {
     width: 355px;
     height: 200px;
     background-color: var(--secondary-color);
-    margin-top: -120px; /* Adjust as needed */
-    margin-left: 365px; /* Adjust as needed */
+    margin-top: -120px;
+    margin-left: 365px;
     padding-top: 200px;
   }
 
@@ -450,9 +460,8 @@ input[type="radio"] {
     color: var(--primary-color);
     display: flex;
     text-align: justify;
-    font-family: Sen;
+    font-family: "Sen", sans-serif;
     margin-left: 45%;
-    margin-top: 60px;
     font-size: 12px;
     font-weight: 400;
     line-height: 14.44px;
@@ -472,7 +481,7 @@ input[type="radio"] {
 
   #html-btn,
   .cj {
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 8px;
     font-weight: 700;
     line-height: 9.68px;
@@ -514,12 +523,6 @@ input[type="radio"] {
     margin-left: 400px;
   }
 
-  .go-live img {
-    height: 16px;
-    width: 20px;
-    margin-top: 5px;
-  }
-
   .go-demo {
     margin-left: 590px;
     top: 420px;
@@ -527,10 +530,5 @@ input[type="radio"] {
     padding: 0;
     width: 120px;
     height: 30px;
-  }
-
-  .go-demo img {
-    width: 14px;
-    height: 14px;
   }
 }
