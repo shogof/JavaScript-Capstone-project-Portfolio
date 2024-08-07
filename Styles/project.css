@@ -119,7 +119,6 @@ input[type="radio"] {
   font-size: 32px;
   font-weight: 800;
   line-height: 38.5px;
-  text-align: left;
   color: var(--primary-color);
   text-align: center;
 }
@@ -146,7 +145,6 @@ input[type="radio"] {
   font-size: 7px;
   font-weight: 400;
   line-height: 8.42px;
-  text-align: left;
   color: rgb(190, 51, 255);
   text-align: center;
   box-sizing: border-box;
@@ -184,7 +182,6 @@ input[type="radio"] {
 }
 
 #proj3 {
-  margin-top: 12px;
   margin-left: 195px;
   margin-top: 5px;
 }
@@ -213,9 +210,11 @@ input[type="radio"] {
   width: 248px;
   height: 220px;
   background-color: rgb(14, 12, 12);
-  box-shadow: 10px 10px 20px rgba(190, 51, 255, 0.3),
+  box-shadow:
+    10px 10px 20px rgba(190, 51, 255, 0.3),
     -10px -10px 20px rgba(190, 51, 255, 0.3),
-    5px 5px 20px rgba(190, 51, 255, 0.3), -5px -5px 20px rgba(190, 51, 255, 0.3);
+    5px 5px 20px rgba(190, 51, 255, 0.3),
+    -5px -5px 20px rgba(190, 51, 255, 0.3);
   z-index: 2;
   position: relative;
   margin-top: -15px;
@@ -241,11 +240,6 @@ input[type="radio"] {
   margin-bottom: 8px;
 }
 
-#html-btn:hover,
-.cj:hover {
-  transform: rotate(5deg);
-}
-
 .cj {
   display: flex;
   justify-content: space-between;
@@ -254,22 +248,28 @@ input[type="radio"] {
   margin-top: 0;
 }
 
+#html-btn:hover,
+.cj:hover {
+  transform: rotate(5deg);
+}
+
 .cj p {
   border: 1px solid rgb(190, 51, 255);
   padding: 2px 5px;
   box-sizing: border-box;
   width: 50px;
   height: 15px;
-  box-sizing: border-box;
 }
 
 .detail-div {
   width: 270px;
   height: 215px;
   background-color: var(--secondary-color);
-  box-shadow: 10px 10px 20px rgba(190, 51, 255, 0.3),
+  box-shadow:
+    10px 10px 20px rgba(190, 51, 255, 0.3),
     -10px -10px 20px rgba(190, 51, 255, 0.3),
-    5px 5px 20px rgba(190, 51, 255, 0.3), -5px -5px 20px rgba(190, 51, 255, 0.3);
+    5px 5px 20px rgba(190, 51, 255, 0.3),
+    -5px -5px 20px rgba(190, 51, 255, 0.3);
   z-index: 1;
   position: relative;
   margin-top: -80px;

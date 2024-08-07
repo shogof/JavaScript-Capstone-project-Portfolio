@@ -1,5 +1,3 @@
-const user = document.getElementById('perview');
-
 // Define image paths
 const projects = document.querySelectorAll('.proj');
 
@@ -18,6 +16,103 @@ const secondImagePaths = [
 let showFirstSet = true;
 
 const modalContainer = document.querySelector('.modal');
+
+// Popup window
+const projectCard = [
+  {
+    id: '0',
+    image: 'image/pokemon/home page pokemon.jpg',
+    image1: 'image/pokemon/detail-pokemon image.png',
+    image2: 'image/pokemon/third-pokmeon.jpg',
+    title: 'Pokémon Search App',
+    descriptionShort:
+      'Pokémon Search App 🕵️‍♂️✨ is a comprehensive tool for discovering detailed information about your favorite Pokémon! 🐾🔍',
+    descriptionLong1:
+      'Easily search for Pokémon by name, type, or abilities to access their stats,  moves, and evolutions. 📊💪',
+    language1: 'JavaScript',
+    language2: 'HTML',
+    language3: 'CSS',
+    buttonLive: '//shogof.github.io/Build-a-Pok-mon-Search-App/',
+    buttonSource: '//github.com/shogof/Build-a-Pok-mon-Search-App',
+  },
+  {
+    id: '1',
+    image: 'image/landing/land-home-page.png',
+    image1: 'image/landing/landing.pag2.png',
+    image2: 'image/landing/third.jpg',
+    title: 'Landing page project',
+    descriptionShort: '🍔 Welcome to our Hamburger Landing Page!',
+    descriptionLong1:
+      'Crafted with passion and precision, it s a feast for the eyes and a treat for your taste buds. Delve into the artistry of HTML/CSS as we serve up a delectable array of web development essentials.🍔💻🎉',
+    language1: 'languages',
+    language2: 'CSS',
+    language3: 'JavaScript',
+    buttonLive: '//shogof.github.io/Landing-page-project/',
+    buttonSource: '//github.com/shogof/Landing-page-project',
+  },
+  {
+    id: '5',
+    image: 'image/cash rigister/11.jpg',
+    image1: 'image/cash rigister/cash-second.png',
+    image2: 'image/cash rigister/third.jpg',
+    title: 'Cash Register App',
+    descriptionShort:
+      'Create an easy-to-use cash register with basic features for managing sales. Features:',
+    descriptionLong1:
+      '💵 Handles Transactions: Processes sales and gives change.🔄 Simple to Use: Easy setup and intuitive interface.',
+    language1: 'JavaScript',
+    language2: 'HTML',
+    language3: 'CSS',
+    buttonLive: 'https://shogof.github.io/build-a-cash-register/',
+    buttonSource: 'https://github.com/shogof/build-a-cash-register',
+  },
+  {
+    id: '3',
+    image: 'image/phone number validation tool/phone home page.jpg',
+    image1: 'image/phone number validation tool/phone second page.jpg',
+    image2: 'image/phone number validation tool/phone third page.jpg',
+    title: 'Phone number validation tool',
+    descriptionShort: '📞Welcome to our Global Phone Number Validator project!',
+    descriptionLong1:
+      'Dive into meticulous validation across Iran, Afghanistan, and the USA. Our regex patterns and modern JavaScript techniques ensure robust validation.',
+    language1: 'HTML',
+    language2: 'CSS',
+    language3: 'JavaScript',
+    buttonLive: 'https://shogof.github.io/phone-number-validattion/',
+    buttonSource: 'https://github.com/shogof/phone-number-validattion',
+  },
+  {
+    id: '4',
+    image: 'image/roman/roman only page.jpg',
+    image1: 'image/roman/pv roman.jpg',
+    image2: 'image/roman/third.jpg',
+    title: 'Roman Numeral Converter',
+    descriptionShort: 'Welcome to our Build-a-Roman-Numeral-Converter project!',
+    descriptionLong1:
+      'Crafted with historical intrigue and coding finesse, Embark on a voyage through JavaScript, where ancient symbols blend seamlessly with modern web techniques.',
+    language1: 'Languages',
+    language2: 'HTML',
+    language3: 'CSS',
+    buttonLive: 'https://shogof.github.io/Build-a-Roman-Numeral-Converter/',
+    buttonSource: '//github.com/shogof/Build-a-Roman-Numeral-Converter',
+  },
+  {
+    id: '2',
+    image: 'image/personal por/about page.jpg',
+    image1: 'image/personal por/project page.jpg',
+    image2: 'image/personal por/contact page.jpg',
+    title: 'Personal Portfolio',
+    descriptionShort:
+      ' Embark on a journey through the realm of web development with me, Shogofa Developer.',
+    descriptionLong1:
+      '🚀 As a diligent web development enthusiast, Ive dedicated numerous hours to refining my skills in remote development.',
+    language1: 'HTML',
+    language2: 'CSS',
+    language3: 'JavaScript',
+    buttonLive: 'https://shogof.github.io/portfolio/',
+    buttonSource: 'https://github.com/shogof/portfolio',
+  },
+];
 
 const showModal = (event) => {
   const clickedButton = event.target.id;
@@ -122,9 +217,7 @@ const toggleImages = () => {
     }
     imgElement.alt = `Project Image ${index + 1}`;
     projElement.appendChild(imgElement);
-
   });
-
   showFirstSet = !showFirstSet;
 };
 
@@ -146,104 +239,6 @@ projects.forEach((projElement, index) => {
 const vic = document.getElementById('vic');
 vic.addEventListener('click', toggleImages);
 
-// Popup window
-const projectCard = [
-  {
-    id: '0',
-    image: 'image/pokemon/home page pokemon.jpg',
-    image1: 'image/pokemon/detail-pokemon image.png',
-    image2: 'image/pokemon/third-pokmeon.jpg',
-    title: 'Pokémon Search App',
-    descriptionShort:
-      'Pokémon Search App 🕵️‍♂️✨ is a comprehensive tool for discovering detailed information about your favorite Pokémon! 🐾🔍',
-    descriptionLong1:
-      'Easily search for Pokémon by name, type, or abilities to access their stats,  moves, and evolutions. 📊💪',
-    language1: 'JavaScript',
-    language2: 'HTML',
-    language3: 'CSS',
-    buttonLive: '//shogof.github.io/Build-a-Pok-mon-Search-App/',
-    buttonSource: '//github.com/shogof/Build-a-Pok-mon-Search-App',
-  },
-  {
-    id: '1',
-    image: 'image/landing/land-home-page.png',
-    image1: 'image/landing/landing.pag2.png',
-    image2: 'image/landing/third.jpg',
-    title: 'Landing page project',
-    descriptionShort: '🍔 Welcome to our Hamburger Landing Page!',
-    descriptionLong1:
-      'Crafted with passion and precision, it s a feast for the eyes and a treat for your taste buds. Delve into the artistry of HTML/CSS as we serve up a delectable array of web development essentials.🍔💻🎉',
-    language1: 'languages',
-    language2: 'CSS',
-    language3: 'JavaScript',
-    buttonLive: '//shogof.github.io/Landing-page-project/',
-    buttonSource: '//github.com/shogof/Landing-page-project',
-  },
-  {
-    id: '5',
-    image: 'image/cash rigister/11.jpg',
-    image1: 'image/cash rigister/cash-second.png',
-    image2: 'image/cash rigister/third.jpg',
-    title: 'Cash Register App',
-    descriptionShort:
-      'Create an easy-to-use cash register with basic features for managing sales. Features:',
-    descriptionLong1:
-      '💵 Handles Transactions: Processes sales and gives change.🔄 Simple to Use: Easy setup and intuitive interface.',
-    language1: 'JavaScript',
-    language2: 'HTML',
-    language3: 'CSS',
-    buttonLive: 'https://shogof.github.io/build-a-cash-register/',
-    buttonSource: 'https://github.com/shogof/build-a-cash-register',
-  },
-  {
-    id: '3',
-    image: 'image/phone number validation tool/phone home page.jpg',
-    image1: 'image/phone number validation tool/phone second page.jpg',
-    image2: 'image/phone number validation tool/phone third page.jpg',
-    title: 'Phone number validation tool',
-    descriptionShort: '📞Welcome to our Global Phone Number Validator project!',
-    descriptionLong1:
-      'Dive into meticulous validation across Iran, Afghanistan, and the USA. Our regex patterns and modern JavaScript techniques ensure robust validation.',
-    language1: 'HTML',
-    language2: 'CSS',
-    language3: 'JavaScript',
-    buttonLive: 'https://shogof.github.io/phone-number-validattion/',
-    buttonSource: 'https://github.com/shogof/phone-number-validattion',
-  },
-  {
-    id: '4',
-    image: 'image/roman/roman only page.jpg',
-    image1: 'image/roman/pv roman.jpg',
-    image2: 'image/roman/third.jpg',
-    title: 'Roman Numeral Converter',
-    descriptionShort: 'Welcome to our Build-a-Roman-Numeral-Converter project!',
-    descriptionLong1:
-      'Crafted with historical intrigue and coding finesse, Embark on a voyage through JavaScript, where ancient symbols blend seamlessly with modern web techniques.',
-    language1: 'Languages',
-    language2: 'HTML',
-    language3: 'CSS',
-    buttonLive: 'https://shogof.github.io/Build-a-Roman-Numeral-Converter/',
-    buttonSource: '//github.com/shogof/Build-a-Roman-Numeral-Converter',
-  },
-  {
-    id: '2',
-    image: 'image/personal por/about page.jpg',
-    image1: 'image/personal por/project page.jpg',
-    image2: 'image/personal por/contact page.jpg',
-    title: 'Personal Portfolio',
-    descriptionShort:
-      ' Embark on a journey through the realm of web development with me, Shogofa Developer.',
-    descriptionLong1:
-      '🚀 As a diligent web development enthusiast, Ive dedicated numerous hours to refining my skills in remote development.',
-    language1: 'HTML',
-    language2: 'CSS',
-    language3: 'JavaScript',
-    buttonLive: 'https://shogof.github.io/portfolio/',
-    buttonSource: 'https://github.com/shogof/portfolio',
-  },
-];
-
-//desktop
 
 // Array of image data
 const images = [

@@ -116,13 +116,6 @@ To contribute to this project, please follow these steps:
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE) file for more details.
 
-## Acknowledgements 🙏
-
-I would like to express my gratitude to the following resources and inspirations:
-
-- [MDN Web Docs](https://developer.mozilla.org/) for comprehensive web development documentation.
-- [FreeCodeCamp](https://www.freecodecamp.org/) for their extensive educational resources and challenges.
-- [Design Resources](https://www.behance.net/) for design inspiration and concepts.
 
 ## Contact Me 📬
 
