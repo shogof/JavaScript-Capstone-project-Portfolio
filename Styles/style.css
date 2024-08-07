@@ -678,7 +678,6 @@ input:checked + .sliders-round::before {
 
 @media (min-width: 768px) {
   .home {
-    padding: 117px 98px 245px 106px;
     flex-direction: row;
   }
 
