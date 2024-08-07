@@ -9,12 +9,14 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="Styles/style.css" />
-    <link rel="stylesheet" href="Styles/aboutMe.css">
-    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="Styles/aboutMe.css" />
+    <link rel="stylesheet" href="Styles/project.css" />
+    <link rel="stylesheet" href="Styles/contact.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- <div class="preloader">
@@ -25,27 +27,27 @@
       </div>
     </div> -->
     <div class="header">
-        <a href="#home" class="logo">Shogo</a>
-        <div id="div-ezafi"></div>
-        <nav class="navbar">
-          <a href="#home" class="active">Home</a>
-          <a href="#about">About</a>
-          <a href="#project">Project</a>
-          <a href="#contact">Contact</a>
-          <label class="theme-switch">
-            <input type="checkbox" />
-            <div class="sliders round"></div>
-          </label>
-        </nav>
-        <div id="ham-btn">
-          <i class="bx bx-menu" id="menu-icon"></i>
-        </div>
-        <div class="theme-switch-wrapper" id="lab">
-          <label class="theme-switch">
-            <input type="checkbox" />
-            <div class="sliders round"></div>
-          </label>
-        </div>
+      <a href="#home" class="logo">Shogo</a>
+      <div id="div-ezafi"></div>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+        <label class="theme-switch">
+          <input type="checkbox" />
+          <div class="sliders round"></div>
+        </label>
+      </nav>
+      <div id="ham-btn">
+        <i class="bx bx-menu" id="menu-icon"></i>
+      </div>
+      <div class="theme-switch-wrapper" id="lab">
+        <label class="theme-switch">
+          <input type="checkbox" />
+          <div class="sliders round"></div>
+        </label>
+      </div>
     </div>
     <section class="home" id="home">
       <div class="home-content">
@@ -59,32 +61,34 @@
         <a href="contact" class="btn1">LET'S CONNECT </a>
         <div class="social-container">
           <div class="navigation">
-            <span id="nav1"> 
-              <a href="#"><i class='bx bxl-facebook-circle'></i></i></a>
+            <span id="nav1">
+              <a href="#"><i class="bx bxl-facebook-circle"></i></a>
             </span>
             <span id="nav2">
               <a href="#"><i class="bx bxl-linkedin"></i></a>
             </span>
             <span id="nav3">
-              <a href="https://github.com/shogof"><i class="bx bxl-github"></i></a>
+              <a href="https://github.com/shogof"
+                ><i class="bx bxl-github"></i
+              ></a>
             </span>
             <span id="nav4">
               <a href="#"><i class="bx bxl-whatsapp"></i></a>
             </span>
             <span id="nav5">
-              <a href="#"><i class='bx bxl-telegram'></i></i></a>
+              <a href="#"><i class="bx bxl-telegram"></i></a>
             </span>
             <span id="nav6">
-              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
             </span>
             <span id="nav7">
               <ion-icon name="close-outline" id="zarb"></ion-icon>
             </span>
             <span id="nav8">
-              <a href="#"><i class='bx bxl-gmail'></i></i></a>
+              <a href="#"><i class="bx bxl-gmail"></i></a>
             </span>
             <span id="nav9">
-              <a href="#"><i class='bx bxl-instagram'></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
             </span>
           </div>
         </div>
@@ -100,10 +104,10 @@
             <div class="slider-container">
               <div>
                 <div>
-                  <div class="slider" id="slid"></div>
+                  <div class="about-slider" id="slid"></div>
                 </div>
               </div>
-            </div> 
+            </div>
             <div class="content">
               <button class="btn" id="prev" type="button">
                 <i class="fas fa-chevron-left"></i>
@@ -272,7 +276,7 @@
                       <div id="number3"></div>
                     </div>
                   </div>
-                  <p>Problem Solving </p>
+                  <p>Problem Solving</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"
@@ -298,13 +302,41 @@
             </div>
           </section>
           <div class="about-btn-div">
-            <button id="about-btn" type="button"><a  href="./CV (final).pdf" download="CV (final).pdf">
-              Download CV
-            </a></button>
+            <button id="about-btn" type="button">
+              <a href="./CV (final).pdf" download="CV (final).pdf">
+                Download CV
+              </a>
+            </button>
           </div>
         </div>
       </section>
     </section>
+    <!-- project section -->
+    <div class="modal hidden"></div>
+    <section class="project">
+      <h2>Project</h2>
+      <div class="cir" id="cir1">Latest Project</div>
+
+      <img src="image/1.png" alt="" id="proj1" />
+      <div class="proj"></div>
+      <div class="cir" id="cir2">
+        2nd <br />
+        Project
+      </div>
+      <img src="image/2.png" alt="" id="proj2" />
+      <div class="proj"></div>
+
+      <div class="cir" id="cir3">3rd <br />Project</div>
+      <img src="image/33.png" alt="" id="proj3" />
+      <div class="proj"></div>
+      <div id="victor">
+        <img src="image/victor.png" alt="" id="vic" />
+      </div>
+    </section>
+    <div class="Desktop-project-section">
+      <h2 id="project-main-header">Projects</h2>
+      <div id="slider-container"></div>
+    </div>
     <!-- contact part -->
     <section class="contact">
       <div class="contact-container">
@@ -404,6 +436,7 @@
     ></script>
     <script src="scripts/aboutMe.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/project.js"></script>
     <script src="scripts/contact.js"></script>
   </body>
 </html>

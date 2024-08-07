@@ -39,7 +39,7 @@ setInterval(() => {
 
 // slider part
 
-const sliderContainer = document.getElementById('slid');
+const slicont = document.getElementById('slid');
 
 const sliderData = [
   {
@@ -70,7 +70,7 @@ const sliderData = [
 function createSlider() {
   sliderData.forEach((item) => {
     const imgDiv = document.createElement('div');
-    imgDiv.classList.add('img');
+    imgDiv.classList.add('about-img');
 
     const linkElement = document.createElement('a');
     linkElement.href = item.link;
@@ -83,15 +83,15 @@ function createSlider() {
 
     linkElement.appendChild(imgElement);
     imgDiv.appendChild(linkElement);
-    sliderContainer.appendChild(imgDiv);
+    slicont.appendChild(imgDiv);
   });
 }
 
 createSlider();
 
-const slider = document.querySelector('.slider');
+const slider = document.querySelector('.about-slider');
 const btns = document.querySelectorAll('.btn');
-const slides = document.querySelectorAll('.img');
+const slides = document.querySelectorAll('.about-img');
 const options = document.querySelectorAll('.option');
 
 let index = 1;

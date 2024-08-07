@@ -44,14 +44,14 @@
   border-radius: 30px;
 }
 
-.slider {
+.about-slider {
   display: grid;
   grid-template-columns: repeat(7, 100%);
   width: 280.94px;
   height: 265px;
 }
 
-.img img {
+.about-img img {
   position: absolute;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -313,8 +313,7 @@ ul li.colored {
   height: 80px;
   border-radius: 50%;
   padding: 10px;
-  box-shadow:
-    6px 6px 10px -1px rgba(255, 255, 255, 0.15),
+  box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.15),
     -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
 }
 
@@ -325,11 +324,9 @@ ul li.colored {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow:
-    inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
+  box-shadow: inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
     inset -4px -4px 6px -1px rgba(0, 0, 0, 0.7),
-    -0.5px -0.5px 0 rgba(0, 0, 0, 1),
-    0.5px 0.5px 0 rgba(255, 255, 255, 0.15),
+    -0.5px -0.5px 0 rgba(0, 0, 0, 1), 0.5px 0.5px 0 rgba(255, 255, 255, 0.15),
     0 12px 10px -10px rgba(255, 255, 255, 0.05);
 }
 
@@ -427,8 +424,7 @@ svg {
   background-color: #fff;
   color: rgb(190, 51, 255);
   font-weight: 900;
-  box-shadow:
-    inset 5px 5px 20px rgb(190, 51, 255),
+  box-shadow: inset 5px 5px 20px rgb(190, 51, 255),
     inset -5px -5px 20px rgb(190, 51, 255);
 }
 
@@ -464,16 +460,16 @@ svg {
 
   .slider-container > div,
   .content,
-  .slider {
+  .about-slider {
     width: 280.94px;
     height: 390px;
   }
 
-  .slider {
+  .about-slider {
     grid-template-columns: repeat(20, 100%);
   }
 
-  .img img {
+  .about-img img {
     height: 240px;
     margin: 173px -40px;
   }
@@ -565,8 +561,7 @@ svg {
     border-radius: 50%;
     margin-left: 10px;
     padding: 5px;
-    box-shadow:
-      6px 6px 10px -1px rgba(255, 255, 255, 0.15),
+    box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.15),
       -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
   }
 
@@ -574,11 +569,9 @@ svg {
     width: 60px;
     height: 60px;
     margin-top: 5px;
-    box-shadow:
-      inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
+    box-shadow: inset 4px 4px 6px -1px rgba(255, 255, 255, 0.2),
       inset -4px -4px 6px -1px rgba(0, 0, 0, 0.7),
-      -0.5px -0.5px 0 rgba(0, 0, 0, 1),
-      0.5px 0.5px 0 rgba(255, 255, 255, 0.15),
+      -0.5px -0.5px 0 rgba(0, 0, 0, 1), 0.5px 0.5px 0 rgba(255, 255, 255, 0.15),
       0 12px 10px -10px rgba(255, 255, 255, 0.05);
   }
 
@@ -638,16 +631,16 @@ svg {
 
   .slider-container > div,
   .content,
-  .slider {
+  .about-slider {
     width: 503.26px;
     height: 454.92px;
   }
 
-  .slider {
+  .about-slider {
     grid-template-columns: repeat(200, 100%);
   }
 
-  .img img {
+  .about-img img {
     height: 320px;
     margin: 215px 50px 205px 40px;
     width: 85%;

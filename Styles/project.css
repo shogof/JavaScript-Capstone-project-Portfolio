@@ -1,0 +1,539 @@
+body {
+    background-color: #000;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
+  .fa-times {
+    position: relative;
+    top: -2.6rem;
+    left: 22rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    transition: transform 0.9s ease, color 0.3s ease; /* Added transition */
+  }
+  
+  .fa-times:hover {
+    transform: rotate(180deg);
+    color: rgb(190, 51, 255);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .popup h2 {
+    color: #fff;
+  }
+  
+  .image-div .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-div .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    clip-path: circle(0% at 0% 100%);
+    transition: all 0.7s;
+  }
+  
+  #one:checked ~ .img-1 img {
+    clip-path: circle(150% at 0% 100%);
+  }
+  
+  #two:checked ~ .img-1 img,
+  #two:checked ~ .img-2 img {
+    clip-path: circle(150% at 0% 100%);
+  }
+  
+  #three:checked ~ .img-1 img,
+  #three:checked ~ .img-2 img,
+  #three:checked ~ .img-3 img {
+    clip-path: circle(150% at 0% 100%);
+  }
+  
+  .image-div .sliders {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    display: flex;
+  }
+  
+  .image-div .sliders label {
+    border: 2px solid rgb(190, 51, 255);
+    width: 13px;
+    height: 13px;
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.9s ease;
+  }
+  
+  #one:checked ~ .sliders label.one,
+  #two:checked ~ .sliders label.two,
+  #three:checked ~ .sliders label.three {
+    width: 35px;
+    border-radius: 14px;
+    background: rgb(190, 51, 255);
+  }
+  
+  .sliders label:hover {
+    background: rgb(190, 51, 255);
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* //// */
+  .project h2 {
+    font-family: Sen;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.5px;
+    text-align: left;
+    color: white;
+    text-align: center;
+  }
+  
+  .proj {
+    width: 258px;
+    height: 173px;
+    background-color: aquamarine;
+    margin: -5px auto;
+  }
+  
+  .project img {
+    margin-bottom: 0;
+  }
+  
+  .g {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cir {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid rgb(190, 51, 255);
+    font-family: Sen;
+    font-size: 7px;
+    font-weight: 400;
+    line-height: 8.42px;
+    text-align: left;
+    color: rgb(190, 51, 255);
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 8px;
+  }
+  
+  #cir1 {
+    float: right;
+    margin: 0;
+    margin-right: 51px;
+  }
+  
+  #cir2 {
+    float: left;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 20.5px;
+  }
+  
+  #cir3 {
+    float: right;
+    margin-right: 51px;
+    margin-top: 24px;
+    margin-left: 0;
+  }
+  
+  #proj1 {
+    margin-top: 12px;
+    margin-left: 196px;
+  }
+  
+  #proj2 {
+    margin-left: -10px;
+    margin-top: 5px;
+  }
+  
+  #proj3 {
+    margin-top: 12px;
+    margin-left: 195px;
+    margin-top: 5px;
+  }
+  
+  #victor {
+    margin-top: 36.28px;
+    text-align: center;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    max-width: 90%; /* Ensures it doesn't exceed viewport width */
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .image-div {
+    width: 248px;
+    height: 220px;
+    background-color: rgb(169, 159, 159);
+    box-shadow: 10px 10px 20px rgba(190, 51, 255, 0.3),
+      -10px -10px 20px rgba(190, 51, 255, 0.3),
+      5px 5px 20px rgba(190, 51, 255, 0.3), -5px -5px 20px rgba(190, 51, 255, 0.3);
+    z-index: 2;
+    position: relative;
+    margin-top: -15px;
+  }
+  
+  #html-btn,
+  .cj {
+    font-family: Inter;
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 9.68px;
+    text-align: center;
+  }
+  
+  #html-btn {
+    margin-left: 140px;
+    width: 70px;
+    height: 15px;
+    margin-top: 19px;
+    border: 1px solid rgb(190, 51, 255);
+    padding: 2px 15px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+  }
+  
+  #html-btn:hover,
+  .cj:hover {
+    transform: rotate(5deg);
+  }
+  
+  .cj {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin-left: 115px;
+    margin-top: 0;
+  }
+  
+  .cj p {
+    border: 1px solid rgb(190, 51, 255);
+    padding: 2px 5px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 15px;
+    box-sizing: border-box;
+  }
+  
+  .detail-div {
+    width: 270px;
+    height: 215px;
+    background-color: #000;
+    box-shadow: 10px 10px 20px rgba(190, 51, 255, 0.3),
+      -10px -10px 20px rgba(190, 51, 255, 0.3),
+      5px 5px 20px rgba(190, 51, 255, 0.3), -5px -5px 20px rgba(190, 51, 255, 0.3);
+    z-index: 1; /* Lower than image-div */
+    position: relative; /* Ensure proper stacking context */
+    margin-top: -80px; /* Adjust as needed */
+    margin-left: 130px; /* Adjust as needed */
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  #detail {
+    color: #f0f0f0;
+    display: flex;
+    text-align: justify;
+    font-family: Sen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.44px;
+    margin-top: 23px;
+  }
+  
+  .go-live,
+  .go-demo {
+    width: 96px;
+    height: 26px;
+    border-radius: 15px;
+    background-color: rgb(190, 51, 255);
+    color: white;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.52px;
+    text-align: center;
+    border: none;
+    padding: 5px 10px 10px 10px;
+    position: relative; /* Ensure proper stacking context */
+    transition: 1s ease;
+  }
+  
+  .go-live {
+    z-index: 3; /* Higher than image-div and detail-div */
+    margin-left: 155px; /* Adjust as needed */
+    padding-top: 2px;
+  }
+  
+  .go-live img {
+    height: 12px;
+    width: 15px;
+    margin-top: 2px;
+  }
+  
+  .go-demo {
+    z-index: 4; /* Higher than go-live */
+    margin-left: 290px; /* Adjust as needed */
+    position: absolute;
+    top: 217px;
+    width: 100px;
+  }
+  
+  .go-demo img {
+    width: 12px;
+    height: 12px;
+    margin-top: 2px;
+  }
+  
+  .go-demo:hover,
+  .go-live:hover {
+    transform: translateX(10px);
+  }
+  
+  .Desktop-project-section {
+    display: none;
+  }
+  
+  @media (min-width: 500px) {
+    .project {
+      display: none;
+    }
+  
+    .Desktop-project-section {
+      display: block;
+      text-align: center;
+    }
+  
+    #project-main-header {
+      font-size: 3rem;
+      top: 30px;
+      color: white;
+    }
+  
+    .slider {
+      margin: 150px auto;
+      position: relative;
+      width: 350px;
+      height: 230px;
+      transform-style: preserve-3d;
+      animation: rotate 35s linear infinite;
+    }
+  
+    .active {
+      animation: rotate 1005s linear infinite;
+    }
+  
+    @keyframes rotate {
+      0% {
+        transform: perspective(1000px) rotateY(0deg);
+      }
+  
+      100% {
+        transform: perspective(1000px) rotateY(360deg);
+      }
+    }
+  
+    .slider span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: rotateY(calc(var(--i) * 60deg)) translateZ(350px);
+    }
+  
+    .slider span img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      /* object-fit: cover; */
+      transition: 2s;
+    }
+  
+    .slider span:hover img,
+    .slider span:hover button {
+      transform: translateY(-50px) scale(1);
+    }
+    .fa-times {
+      top: -3rem;
+      left: 47rem;
+      font-size: 2.2rem;
+    }
+  
+    .popup h2 {
+      font-size: 1.8rem;
+    }
+  
+    .image-div .sliders label {
+      width: 16px;
+      height: 16px;
+    }
+  
+    #one:checked ~ .sliders label.one,
+    #two:checked ~ .sliders label.two,
+    #three:checked ~ .sliders label.three {
+      width: 40px;
+      border-radius: 17px;
+    }
+  
+    .popup {
+      margin-top: 0;
+      padding-top: 0;
+      width: 800px;
+      max-width: 90%; /* Ensures it doesn't exceed viewport width */
+    }
+  
+    .image-div {
+      width: 500px;
+      height: 300px;
+      margin-top: -35px;
+    }
+  
+    .detail-div {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 355px;
+      height: 200px;
+      background-color: #000;
+      margin-top: -120px; /* Adjust as needed */
+      margin-left: 365px; /* Adjust as needed */
+      padding-top: 200px;
+    }
+  
+    #detail {
+      width: 50%;
+      color: #f0f0f0;
+      display: flex;
+      text-align: justify;
+      font-family: Sen;
+      margin-left: 45%;
+      margin-top: 60px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.44px;
+      margin-top: 23px;
+    }
+  
+    .lang {
+      width: 60%;
+    }
+  
+    .lang,
+    .cj {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+  
+    #html-btn,
+    .cj {
+      font-family: Inter;
+      font-size: 8px;
+      font-weight: 700;
+      line-height: 9.68px;
+      text-align: center;
+    }
+  
+    #html-btn {
+      margin-left: -10px;
+      width: 80px;
+      height: 22px;
+      padding: 3px 18px;
+      margin-right: -10px;
+      padding-top: 5px;
+    }
+  
+    .cj {
+      display: flex;
+      margin-left: 10px;
+    }
+  
+    .cj p {
+      width: 70px;
+      height: 20px;
+      margin-left: 10px;
+      padding-top: 5px;
+    }
+  
+    .go-live,
+    .go-demo {
+      width: 140px;
+      height: 35px;
+      border-radius: 18px;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 5px 10px 10px 10px;
+    }
+  
+    .go-live {
+      margin-left: 400px;
+    }
+  
+    .go-live img {
+      height: 16px;
+      width: 20px;
+      margin-top: 5px;
+    }
+  
+    .go-demo {
+      margin-left: 590px;
+      top: 435px;
+      font-size: 14px;
+      padding: 0;
+      width: 120px;
+      height: 30px;
+    }
+  
+    .go-demo img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  

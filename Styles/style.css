@@ -10,7 +10,7 @@
 .light-mode {
   --primary-color: #000;
   --secondary-color: #fff;
-}
+}.sliderr
 
 * {
   margin: 0;
@@ -559,7 +559,7 @@ header {
   display: none;
 }
 
-.sliders {
+.sliderr {
   background: #ccc;
   bottom: 0;
   cursor: pointer;
@@ -570,7 +570,7 @@ header {
   transition: 0.4s;
 }
 
-.sliders::before {
+.sliderr::before {
   background: #010101;
   bottom: 3.52px;
   content: "";
@@ -581,19 +581,19 @@ header {
   width: 19.52px;
 }
 
-input:checked + .sliders {
+input:checked + .sliderr {
   background: rgb(150, 65, 255);
 }
 
-input:checked + .sliders::before {
+input:checked + .sliderr::before {
   transform: translateX(-28px);
 }
 
-.sliders.round {
+.sliderr.round {
   border-radius: 34px;
 }
 
-.sliders.round::before {
+.sliderr.round::before {
   border-radius: 50%;
 }
 
