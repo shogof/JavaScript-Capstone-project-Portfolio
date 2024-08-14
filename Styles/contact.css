@@ -220,6 +220,10 @@ textarea.invalid {
     margin-top: -28px;
   }
 
+  .contact-social-media {
+    margin-bottom: 100px;
+  }
+
   .contact-social-media a {
     padding: 16px 10px;
     margin-left: 25px;
