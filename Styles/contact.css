@@ -1,0 +1,250 @@
+/* Mobile First Styles */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-container {
+  width: 340px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #be33ff;
+  box-shadow: 0 4px 50px 0 #be33ff;
+  max-width: 100%;
+  margin: 10px;
+  background-color: var(--secondary-color);
+  opacity: 1;
+  padding: 22px 19px 44px 19px;
+}
+
+.contact-container h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-family: Sen, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24.06px;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.contact-container span {
+  font-family: Sen, sans-serif;
+  color: rgb(190, 51, 255);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24.06px;
+  text-align: left;
+}
+
+.line {
+  width: 62.9px;
+  border: 3px solid rgb(190, 51, 255);
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+.contact-container label {
+  color: var(--primary-color);
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 302px;
+  width: 100%;
+  padding: 10px;
+  color: var(--primary-color);
+  background-color: var(--input-color);
+  border: 1px solid #be33ff;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  margin-top: 5px;
+}
+
+.contact-container input[type="tel"] {
+  height: 40px;
+}
+
+.contact-container textarea {
+  height: 99px;
+  margin-bottom: 0;
+}
+
+.contact-container button {
+  background-color: #be33ff;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 110px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 101px;
+}
+
+.contact-container button:hover {
+  background-color: #9d28cc;
+}
+
+.contact-social-media a {
+  padding: 10px 8px;
+  margin-left: 20px;
+  margin-top: 37px;
+}
+
+.feedback {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+input.valid,
+textarea.valid {
+  border-color: #4caf50;
+}
+
+input.invalid,
+textarea.invalid {
+  border-color: #ff4c4c;
+}
+
+.feedback.success {
+  color: #4caf50;
+}
+
+.feedback.error {
+  color: #ff4c4c;
+}
+
+.feedback.hidden {
+  display: none;
+}
+
+.error-message {
+  color: #ff4c4c;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+
+.success-message {
+  color: #4caf50;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.contact-social-media {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* media for larger screens */
+@media (min-width: 769px) {
+  .contact-container {
+    padding: 30px;
+    max-width: 900px;
+    margin: 50px auto;
+    width: 900px;
+    height: auto;
+  }
+
+  .contact-container h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .contact-container span {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 710px;
+  }
+
+  .form-group input {
+    width: 350px;
+    height: 50px;
+    margin-bottom: 33px;
+  }
+
+  .contact-container input[type="tel"] {
+    height: 50px;
+  }
+
+  .form-group .input-wrapper {
+    flex: 1;
+    min-width: calc(50% - 10px);
+  }
+
+  .input-wrapper textarea {
+    min-width: 100%;
+    height: 145px;
+  }
+
+  .line {
+    width: 277px;
+    height: 5px;
+  }
+
+  #submit-btn {
+    width: 70px;
+    height: 24px;
+    border-radius: 15px;
+    padding: 11px 50px;
+    box-sizing: content-box;
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: center;
+    margin-left: 280px;
+  }
+
+  .feedback {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: -28px;
+  }
+
+  .contact-social-media {
+    margin-bottom: 100px;
+  }
+
+  .contact-social-media a {
+    padding: 16px 10px;
+    margin-left: 25px;
+    width: 30px;
+    height: 33.6px;
+  }
+}
+
+/* Media Queries for Extra Large Screens */
+@media (min-width: 1200px) {
+  .contact-container {
+    max-width: 1200px;
+  }
+
+  .contact-container h2 {
+    font-size: 64px;
+    line-height: 77px;
+  }
+
+  .contact-container span {
+    font-size: 64px;
+    line-height: 77px;
+  }
+}
