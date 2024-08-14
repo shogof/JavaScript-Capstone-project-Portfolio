@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function validatePhoneNumber() {
     const phoneNumber = phoneNumberInput.value.trim();
-    if (phoneNumber.length === 10 && /^\d{10}$/.test(phoneNumber)) {
+    if (phoneNumber.length > 10) {
       phoneNumberInput.classList.add('valid');
       phoneNumberInput.classList.remove('invalid');
       document
@@ -127,13 +127,13 @@ document.addEventListener('DOMContentLoaded', () => {
         .classList.remove('error', 'hidden');
       document.getElementById('phone-number-feedback').textContent = 'Phone number looks good!';
       document.getElementById('phone-number-feedback').classList.add('success');
-    } else if (phoneNumber.length > 0) {
+    } else if (phoneNumber.length > "") {
       phoneNumberInput.classList.add('invalid');
       phoneNumberInput.classList.remove('valid');
       document
         .getElementById('phone-number-feedback')
         .classList.remove('success', 'hidden');
-      document.getElementById('phone-number-feedback').textContent = 'Phone number must be exactly 10 digits.';
+      document.getElementById('phone-number-feedback').textContent = 'Please enter the phone number';
       document.getElementById('phone-number-feedback').classList.add('error');
     } else {
       phoneNumberInput.classList.remove('valid', 'invalid');

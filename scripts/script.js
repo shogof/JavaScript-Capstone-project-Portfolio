@@ -29,6 +29,7 @@ menuIcon.addEventListener('click', () => {
 document.querySelectorAll('.navbar a').forEach((link) => {
   link.addEventListener('click', () => {
     navbar.classList.remove('active');
+    menuIcon.classList.remove('bx-x');
   });
 });
 

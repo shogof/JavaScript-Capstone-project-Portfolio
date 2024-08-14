@@ -93,6 +93,61 @@
   background-color: #9d28cc;
 }
 
+.contact-social-media a {
+  padding: 10px 8px;
+  margin-left: 20px;
+  margin-top: 37px;
+}
+
+.feedback {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+input.valid,
+textarea.valid {
+  border-color: #4caf50;
+}
+
+input.invalid,
+textarea.invalid {
+  border-color: #ff4c4c;
+}
+
+.feedback.success {
+  color: #4caf50;
+}
+
+.feedback.error {
+  color: #ff4c4c;
+}
+
+.feedback.hidden {
+  display: none;
+}
+
+.error-message {
+  color: #ff4c4c;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+
+.success-message {
+  color: #4caf50;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.contact-social-media {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 /* media for larger screens */
 @media (min-width: 769px) {
   .contact-container {
@@ -158,6 +213,19 @@
     text-align: center;
     margin-left: 280px;
   }
+
+  .feedback {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: -28px;
+  }
+
+  .contact-social-media a {
+    padding: 16px 10px;
+    margin-left: 25px;
+    width: 30px;
+    height: 33.6px;
+  }
 }
 
 /* Media Queries for Extra Large Screens */
@@ -175,57 +243,4 @@
     font-size: 64px;
     line-height: 77px;
   }
-}
-
-/* Feedback styles */
-.feedback {
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-/* Success and error styles */
-input.valid,
-textarea.valid {
-  border-color: #4caf50;
-}
-
-input.invalid,
-textarea.invalid {
-  border-color: #ff4c4c;
-}
-
-/* Feedback messages */
-.feedback.success {
-  color: #4caf50;
-}
-
-.feedback.error {
-  color: #ff4c4c;
-}
-
-/* Error messages */
-.feedback.hidden {
-  display: none;
-}
-
-/* Error message styles */
-.error-message {
-  color: #ff4c4c;
-  font-size: 14px;
-  margin: 10px 0 0 0;
-}
-
-.success-message {
-  color: #4caf50;
-  font-size: 14px;
-}
-
-.hidden {
-  display: none;
-}
-
-.contact-social-media {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }

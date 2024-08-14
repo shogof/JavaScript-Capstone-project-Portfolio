@@ -170,17 +170,6 @@ header {
   z-index: 999;
 }
 
-.header::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 100%;
-  height: 4px;
-  box-shadow: 0 4px 6px rgb(190, 51, 255);
-  z-index: -1;
-}
-
 .logo {
   font-size: 24px;
   color: var(--primary-color);
@@ -432,6 +421,10 @@ header {
   margin: 0 auto;
 }
 
+.home-content #click {
+  text-align: left;
+}
+
 .text-animition {
   font-size: 34px;
   font-weight: 600;
@@ -676,6 +669,17 @@ input:checked + .sliders-round::before {
 }
 
 @media (min-width: 768px) {
+  .header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 4px;
+    box-shadow: 0 4px 6px rgb(190, 51, 255);
+    z-index: -1;
+  }
+
   .home {
     flex-direction: row;
   }
