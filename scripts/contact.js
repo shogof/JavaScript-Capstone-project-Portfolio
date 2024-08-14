@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .classList.remove('error', 'hidden');
       document.getElementById('phone-number-feedback').textContent = 'Phone number looks good!';
       document.getElementById('phone-number-feedback').classList.add('success');
-    } else if (phoneNumber.length > "") {
+    } else if (phoneNumber.length > '') {
       phoneNumberInput.classList.add('invalid');
       phoneNumberInput.classList.remove('valid');
       document
